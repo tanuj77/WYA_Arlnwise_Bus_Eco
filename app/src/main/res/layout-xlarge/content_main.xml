@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_recyclerview"
+    tools:context=".RecyclerViewActivity">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+    <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="40dp">
+
+    </android.support.v7.widget.RecyclerView>
+    </HorizontalScrollView>
+    </ScrollView>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentBottom="true">-->
+
+        <!--&lt;!&ndash;<TextView android:id="@+id/Total"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textColor="@color/Red"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_alignParentTop="true"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Total: "&ndash;&gt;-->
+            <!--&lt;!&ndash;android:textSize="16dp"/>&ndash;&gt;-->
+
+
+        <!--<TextView android:id="@+id/tv_toatalnetamount"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColor="@color/year"-->
+            <!--android:layout_marginLeft="344dp"-->
+            <!--android:layout_gravity="left"-->
+            <!--/>-->
+        <!--<TextView android:id="@+id/tv_totalmonthwisesale"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/year"-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+
+            <!--/>-->
+
+        <!--<TextView android:id="@+id/tv_totalyearwisesale"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textColor="@color/year"-->
+            <!--android:layout_width="82dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="10dp"-->
+
+            <!--/>-->
+
+
+
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

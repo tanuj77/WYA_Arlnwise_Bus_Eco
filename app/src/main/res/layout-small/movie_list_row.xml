@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="4dp" android:paddingRight="4dp"
+    android:paddingTop="2dp" android:paddingBottom="2dp" android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/airlinelogo"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        />
+    <TextView android:id="@+id/tv_airline"
+        android:textColor="@color/year"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="@dimen/report_text_size"/>
+
+    <TextView android:id="@+id/tv_branch"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/year"
+        android:textSize="@dimen/report_text_size"/>
+
+    <TextView android:id="@+id/tv_business"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/year"
+        android:textSize="@dimen/report_text_size"/>
+
+    <TextView
+        android:id="@+id/tv_businessAmount"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/DarkBlue"
+        android:gravity="right"
+        android:textSize="@dimen/report_text_size"/>
+
+    <TextView android:id="@+id/tv_eco"
+        android:textColor="@color/title"
+        android:gravity="right"
+        android:layout_alignParentTop="true"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/report_text_size"
+        />
+
+
+    <TextView android:id="@+id/tv_ecoAmount"
+        android:textColor="@color/DarkBlue"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+
+    <TextView android:id="@+id/tv_first"
+        android:textColor="@color/year"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+
+    <TextView android:id="@+id/tv_firstAmount"
+        android:textColor="@color/DarkBlue"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+    <TextView android:id="@+id/tv_premium"
+        android:textColor="@color/year"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+    <TextView android:id="@+id/tv_premiumAmount"
+        android:textColor="@color/DarkBlue"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+
+    <TextView android:id="@+id/tv_airlineName"
+        android:textColor="@color/DarkBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="Total"
+        android:textSize="@dimen/report_text_size"
+        />
+
+</LinearLayout>

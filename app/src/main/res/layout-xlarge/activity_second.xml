@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/CornflowerBlue"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.ccs.ccs81.wya_arlnwise_bus_eco.SecondActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Black"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:gravity="top|start"
+            android:scaleType="fitCenter"
+            android:src="@drawable/webyatralogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:text="Webyatra - Airlinewise_Business_Economy"
+            android:textColor="@color/White"
+            android:textSize="@dimen/text_size" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/marginbottom"
+            android:layout_marginLeft="@dimen/marginleft"
+            android:layout_marginRight="@dimen/marginright"
+            android:layout_marginTop="@dimen/margintop"
+            android:background="@color/White"
+            android:orientation="vertical"
+            android:padding="@dimen/padding">
+
+
+            <EditText
+                android:id="@+id/et_companyid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:drawableLeft="@drawable/companyimage"
+                android:drawablePadding="20dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="Enter Company ID"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/et_branch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/branch"
+                android:drawablePadding="20dp"
+                android:hint="Customer Branch"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+
+
+            <EditText
+                android:id="@+id/et_startdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/calendaricon"
+                android:drawablePadding="20dp"
+                android:hint="Enter Start Date"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <EditText
+                android:id="@+id/et_endtdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/calendaricon"
+                android:drawablePadding="20dp"
+                android:focusable="false"
+                android:hint="DD-MM-YYYY"
+                android:padding="5dp"
+                android:textSize="@dimen/text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_basicfare"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Basic Fare"
+                        android:textSize="@dimen/text_size" />
+
+                    <CheckBox
+                        android:id="@+id/cb_yqtax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="YQ tax"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <CheckBox
+                        android:id="@+id/cb_yrtax"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="YR tax"
+                        android:textSize="@dimen/text_size" />
+
+                    <CheckBox
+                        android:id="@+id/cb_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginTop="15dp"
+                        android:text="Total"
+                        android:textSize="@dimen/text_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/cb_businesseconomy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="45dp"
+                android:text="Business Economy"
+                android:textSize="@dimen/text_size"/>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <RadioButton
+                    android:id="@+id/rb_eco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Economy"
+                    android:textSize="@dimen/text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rb_business"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Business"
+                    android:textSize="@dimen/text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rb_prm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Premium"
+                    android:textSize="@dimen/text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rb_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="First"
+                    android:textSize="@dimen/text_size"/>
+
+                <RadioButton
+                    android:id="@+id/rb_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="15dp"
+                    android:text="All"
+                    android:textSize="@dimen/text_size"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="@dimen/button1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/buttonshape"
+                android:text="Submit"
+                android:textColor="#FAF5FA"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/btn_downloadExcel"
+                android:layout_width="@dimen/button1_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonshape"
+                android:text="  Download Excel  "
+                android:textColor="#FAF5FA"
+                android:textSize="@dimen/text_size" />
+
+            <ProgressBar
+                android:id="@+id/pbCirular"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progressDrawable="@drawable/progressdialog" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
